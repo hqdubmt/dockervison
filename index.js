@@ -10,6 +10,10 @@ app.get('/', (_req, res) => {
   res.json({ service: 'dockervsion', status: 'hello' });
 });
 
+app.get('/d', (_req, res) => {
+  res.json({ service: 'dockervsion', status: 'healthy' });
+});
+
 app.listen(port, '0.0.0.0', () => {
   console.log(`Server is running on port ${port}`);
 });

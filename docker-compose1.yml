@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+   
+   node_app_lastest:
+      container_name: app_lastest
+      image: hqdu/dockervison:latest
+      restart: always
+
+
+      ports:
+        - "5000:3000"
+
+   node_app_0.01:
+      container_name: app_0.01
+      image: hqdu/dockervison:0.0.1
+      restart: always
+
+      ports:
+        - "5001:3000"     
